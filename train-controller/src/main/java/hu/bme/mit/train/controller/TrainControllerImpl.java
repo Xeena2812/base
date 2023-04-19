@@ -17,7 +17,8 @@ public class TrainControllerImpl implements TrainController {
 	            throw new Exception("Ez egy indokolatlan exception");
 			}
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println("Polling interrupted.");
+
 		}
 
 	});
