@@ -80,4 +80,14 @@ public class TrainSensorTest {
         verify(mockTrainController, times(1)).setSpeedLimit(69);
     }
 
+    /**
+     * Prerequisites: The speedlimit is set to 100
+     * Input: Call the getSpeedLimit() getter.
+     * Expected output: The value of the speedLimit is returned.
+     */
+    @Test
+    public void TestGetSpeedLimit() {
+        Assert.assertEquals(100, trainSensor.getSpeedLimit());
+    }
+
 }
